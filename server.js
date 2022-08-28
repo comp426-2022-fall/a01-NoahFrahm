@@ -40,11 +40,8 @@ var fileData = fs.readFile(filename, 'utf8', (err, data) => {
 const server = http.createServer((req, res) => {
     res.statusCode = 200
     res.setHeader('Content-Type', 'text/html')
-    res.end('<h1>Hello, World!</h1>')
-    res.end(fileData => fs.readFile(filename, encoding, callback_function));
+    res.end(fileData)
   })
-
-
 
 
 // Start the `server` const listening on the port defined by argument in your `port` const. 
@@ -52,6 +49,5 @@ const server = http.createServer((req, res) => {
 server.listen(port, () => {
     console.log(`Server running at port ${port}`)
   })
-
 
 // That's it! You're all done!
