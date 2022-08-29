@@ -2,10 +2,10 @@
 const http = require('http')
 
 // Require fs module
-const http = require('fs')
+const fs = require('fs')
 
 // Require minimist module (make sure you install this one via npm).
-const http = require('minimist')
+const minimist = require('minimist')
 
 // Use minimist to process one argument `--port=` on the command line after `node server.js`.
 const args = process.argv.slice(2);
